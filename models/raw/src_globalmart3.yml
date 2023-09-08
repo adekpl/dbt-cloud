@@ -1,9 +1,9 @@
 version: 2
 
 sources:
-  - name: test
+  - name: globalmart2
     database: raw
-    schema: test
+    schema: globalmart2
     tables:
     - name: customer
     - name: orders
