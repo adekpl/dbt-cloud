@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: globalmart2
+    database: raw
+    schema: globalmart2
+    tables:
+    - name: customer
+    - name: orders
+      columns:
+        - name: orderid
+          tests:
+            - unique
+            - not_null
+    - name: product
