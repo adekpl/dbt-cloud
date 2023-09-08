@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: test
+    database: raw
+    schema: test
+    tables:
+    - name: customer
+    - name: orders
+      columns:
+        - name: orderid
+          tests:
+            - unique
+            - not_null
+    - name: product
