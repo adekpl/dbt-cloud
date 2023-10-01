@@ -4,5 +4,5 @@
 
 
 select * 
-from {{ source('globalmart','orders')}}
+from {{ source('globalmartss','orders')}}
 where shipmode not in ('Unknown')
